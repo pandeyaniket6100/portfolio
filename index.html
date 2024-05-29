@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css.css">
+    <script src="https://kit.fontawesome.com/5c6020a65a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick=openmenu()></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <p>Data Analyst</p>
+            <h1>Hi,<span> I'm Prabhat Pandey <br>from India</span></h1>
+        </div>
+    </div>
+</div>
+<!------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image1.jpg.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p><i>I have a background in Information Technology and have worked as associate Software engineer for the past few months. Additionally , my ability to adapt quickly to new technologies will benefit your team. Dedicated and result-oriented professional passionate about making a profound impact in challenging roles, leveraging expertise for organizational success. Proven track record of achieving goals through strategic thinking and effective collaboration.</i></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software developer</span><br>Dynamic</li>
+                        <li><span>Data Analyst</span><br>Python/Power BI/Microsoft excel</li>
+                        <li><span>Web development</span><br>Designing Web/App interfaces</li>
+                        <li><span>Python developer</span><br>Python-django</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apex Tutorial</span><br>Web Developer-Freelancer</li>
+                        <li><span>Associate Software developer</span><br>Remote Work</li>
+                        <li><span>Advanced Data Analyst-Intenship</span><br>Analyze Pervious Six months data.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Technology (Dec 2020 - June 2024)</span><br>Information Technology with CGPA 7.5</li>
+                        <li><span>12th Aggregate 2019</span><br>68.4% with PCM</li>
+                        <li><span>10th Aggregate 2017</span><br>85% with Science</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------services------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>The process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Data Analyst</h2>
+                <p>Plan decision-making, improve efficiency, enhance customer experiences, and manage risks by interpreting complex data sets.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Python Developer</h2>
+                <p>Design, code, and deploy development projects in the Python language.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-----------------------portfolio---------------->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-List">
+            <div class="work">
+                <img src="web design.jpg.jpg">
+                <div class="layer">
+                    <h3>Dynamic Websites</h3>
+                    <p>Dynamic content (aka adaptive content) refers to web content that changes based on users' behavior, preferences, and interests.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="data anlyst.jpg.jpg">
+                <div class="layer">
+                    <h3>Data Analysis</h3>
+                    <p>Dynamic content (aka adaptive content) refers to web content that changes based on users' behavior, preferences, and interests.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="python.jpg.webp">
+                <div class="layer">
+                    <h3>Python-django Integrated</h3>
+                    <p>Dynamic content (aka adaptive content) refers to web content that changes based on users' behavior, preferences, and interests.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------------------Contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pprabhat214@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9118527696</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/prabhat_pandey_2001/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/prabhat-pandey-923285213/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my cv.pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+                <span id="msg">
+                    hello
+                </span>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Prabhat. Made by <i class="fa-solid fa-heart"></i> ourselves</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYRqzri9RREZzss66Cfa9rgjImpYM42EI5dLuDU7Y5yLFJ6JsAyTvO3uzOooXkHRWFRQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
